@@ -20,7 +20,7 @@ int main(int argc, char* argv[])
 			Screen::Instance()->Clear();
 			Screen::Instance()->SwapBuffer();
 
-			glBegin(GL_TRIANGLES);
+			glBegin(GL_TRIANGLES); // Need to make seperate folder for making glBegin,Color,Vertex3f & End
 
 			glColor3f(1.0f, 0.0f, 0.0f);
 			glVertex3f(0.0f, 0.5f, 0.0f);
