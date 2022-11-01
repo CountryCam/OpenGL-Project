@@ -14,12 +14,12 @@ This is an OpenGL Project we're doing for class.
 
 ## I plan to update this project in the future, to optimize it and add more features! Check out my links for news!
 
-[Glitch](https://glitch.com/@AlexGama11) is my glitch profile with my website, and possibly more projects.
+[Glitch](https://glitch.com/@cae0193) is my glitch profile with my website, and possibly more projects.
 
-[Github](https://github.com/AlexGama11) is my github profile if anyone wishes to visit.
+[Github](https://github.com/CountryCam) is my github profile if anyone wishes to visit.
 
-[Twitter](https://twitter.com/Alex_CorreiaG) is my twitter profile in case you wish to check it, i'll post updates occasionally there.
+[Itch.io](https://camgame.itch.io/) is my itch.io profile if you want to see it, i'll post my games there.
 
-[Itch.io](https://alexmango.itch.io) is my itch.io profile if you want to see it, i'll post my games there.
+## Add Twitter Page here
 
 ![Swords](https://cdn.discordapp.com/avatars/354861103920054274/9c8474b81fa3ea10585ee950f812bf43.png?size=2048)
