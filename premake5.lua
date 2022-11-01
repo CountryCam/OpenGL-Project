@@ -65,6 +65,7 @@ workspace "OpenGl Project"
 			syslibdirs {
 			".\\DevLib\\SDL\\lib\\",
 			".\\DevLib\\SDL\\dlls\\",
+			
 			}
 		filter {}
 
@@ -79,6 +80,7 @@ workspace "OpenGl Project"
 		includedirs {
 			".\\DevLib\\SDL\\include\\",
 			".\\OpenGL Project\\",
+			".\\DevLib\\SDL\\glm\\",
 		}
 
 	-- sets where it gets source files.
