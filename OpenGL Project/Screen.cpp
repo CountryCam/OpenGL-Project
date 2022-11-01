@@ -1,5 +1,6 @@
 #include "Screen.h"
 
+
 Screen* Screen::Instance()
 {
 	static Screen* screen = new Screen;

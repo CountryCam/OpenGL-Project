@@ -1,6 +1,7 @@
 #include "Input.h"
 #include <glm.hpp>
 
+
 Input* Input::Instance()
 {
 	static Input* input = new Input;

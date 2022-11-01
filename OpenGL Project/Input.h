@@ -45,6 +45,9 @@ private:
 	
 	bool quit = { false };
 
+	SDL_Point mousePosition;
+	SDL_Point mouseMotion;
+
 };
 
 	//Keyboard keyboard

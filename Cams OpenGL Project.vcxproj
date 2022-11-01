@@ -125,6 +125,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="OpenGL Project\Main.frag" />
+    <None Include="OpenGL Project\Main.vert" />
     <None Include="README.md" />
     <None Include="premake5.lua" />
   </ItemGroup>

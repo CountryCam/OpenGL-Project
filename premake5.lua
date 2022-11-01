@@ -95,7 +95,8 @@ workspace "OpenGl Project"
 		vpaths {
    			["Headers"] = {"**.h", "**.hpp"},
    			["Sources"] = {"**.c", "**.cpp"},
-   			["Docs"] = {"**.txt", "**.md", "**.lua", "**.gitignore"}
+   			["Docs"] = {"**.txt", "**.md", "**.lua", "**.gitignore"},
+			["Shaders"] = {"**.frag", "**.vert"}
 		}
 
 	-- postbuildcommand to automatically copy dlls from their folder to the build folder, if you change any of these, make sure to change the filepath here.
