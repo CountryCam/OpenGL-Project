@@ -37,6 +37,9 @@
     <None Include=".gitignore">
       <Filter>Docs</Filter>
     </None>
+    <None Include="README.md">
+      <Filter>Docs</Filter>
+    </None>
     <None Include="premake5.lua">
       <Filter>Docs</Filter>
     </None>

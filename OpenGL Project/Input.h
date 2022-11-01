@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <SDL.h>
-#include <glm/glm.hpp>
 #include <glm.hpp>
 
 class Input

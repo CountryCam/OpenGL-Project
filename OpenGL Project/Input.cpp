@@ -1,6 +1,5 @@
 #include "Input.h"
-#include<glm>
-
+#include <glm.hpp>
 
 Input* Input::Instance()
 {
