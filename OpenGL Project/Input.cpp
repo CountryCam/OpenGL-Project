@@ -8,6 +8,58 @@ Input* Input::Instance()
 	return input;
 }
 
+bool Input::IsXClicked() const
+{
+	return isxclicked;
+}
+
+bool Input::IsKeyPressed() const
+{
+	return iskeypressed;
+}
+
+char Input::GetKey() const
+{
+	return 0;
+}
+
+char Input::GetKeyDown() const
+{
+	return 0;
+}
+
+bool Input::IsLeftButtonClicked() const
+{
+	return false;
+}
+
+bool Input::IsRightButtonClicked() const
+{
+	return false;
+}
+
+bool Input::IsMiddleButtonClicked() const
+{
+	return false;
+}
+
+const glm::ivec2& Input::GetMouseWheel() const
+{
+	return mouseWheel;
+}
+
+const glm::ivec2& Input::GetMousePosition() const
+{
+	// TODO: insert return statement here
+	return mousePosition;
+}
+
+const glm::ivec2& Input::GetMouseMotion() const
+{
+	// TODO: insert return statement here
+	return mouseMotion;
+}
+
 void Input::Update()
 {
 	while (SDL_PollEvent(&events))
@@ -54,55 +106,3 @@ void Input::Update()
 	}
 }
 }
-bool Input::IsXClicked() const
-{
-	return isxclicked;
-}
-
-bool Input::IsKeyPressed() const
-{
-	return iskeypressed;
-}
-
-char Input::GetKey() const
-{
-	return 0;
-}
-
-char Input::GetKeyDown() const
-{
-	return 0;
-}
-
-bool Input::IsLeftButtonClicked() const
-{
-	return false;
-}
-
-bool Input::IsRightButtonClicked() const
-{
-	return false;
-}
-
-bool Input::IsMiddleButtonClicked() const
-{
-	return false;
-}
-
-int Input::GetMouseWheelMotion() const
-{
-	return 0;
-}
-
-const SDL_Point& Input::GetMousePosition() const
-{
-	// TODO: insert return statement here
-	return GetMousePosition();
-}
-
-const SDL_Point& Input::GetMouseMotion() const
-{
-	// TODO: insert return statement here
-	return GetMouseMotion();
-}
-

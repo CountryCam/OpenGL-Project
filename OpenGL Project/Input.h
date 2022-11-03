@@ -19,10 +19,10 @@ public:
 	bool IsRightButtonClicked() const;
 	bool IsMiddleButtonClicked() const;
 
-	int GetMouseWheelMotion() const;
+	const glm::ivec2& GetMouseWheel() const;
+	const glm::ivec2& GetMouseMotion() const;
+	const glm::ivec2& GetMousePosition() const;
 
-	const SDL_Point& GetMousePosition() const;
-	const SDL_Point& GetMouseMotion() const;
 
 	void Update();
 
@@ -44,9 +44,10 @@ private:
 	bool ismiddlebuttonclicked = { false };
 	
 	bool quit = { false };
-
-	SDL_Point mousePosition;
-	SDL_Point mouseMotion;
+	
+	glm::ivec2 mouseWheel{ 0 };
+	glm::ivec2 mouseMotion{ 0 };
+	glm::ivec2 mousePosition{ 0 };
 
 };
 
