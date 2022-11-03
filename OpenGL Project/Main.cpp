@@ -13,7 +13,7 @@ bool isAppRunning { true };
 
 int main(int argc, char* argv[])
 {
-	Screen::Instance()->Initialize(1280, 720, 320, 180, 4.5);
+	Screen::Instance()->Initialize(1280, 720, 20, 80, 4.5);
 
 		while (isAppRunning)
 		{

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <SDL.h>
+#include <glm.hpp>
 
 class Input
 {
@@ -12,6 +13,7 @@ public:
 
 	char GetKey() const;
 	char GetKeyDown() const;
+
 
 	bool IsLeftButtonClicked() const;
 	bool IsRightButtonClicked() const;
@@ -31,17 +33,20 @@ private:
 	Input(const Input&);
 	Input& operator = (const Input&);
 
-	bool isxclicked = false;
-	bool iskeypressed = false;
+	bool isxclicked = { false };
+	bool iskeypressed = { false };
 
 	
 	char key = events.key.keysym.sym;
 	
-	bool isleftbuttonclicked = false;
-	bool isrightbuttonclicked = false;
-	bool ismiddlebuttonclicked = false;
+	bool isleftbuttonclicked = { false };
+	bool isrightbuttonclicked = { false };
+	bool ismiddlebuttonclicked = { false };
 	
-	
+	bool quit = { false };
+
+	SDL_Point mousePosition;
+	SDL_Point mouseMotion;
 
 };
 

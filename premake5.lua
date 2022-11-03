@@ -65,6 +65,7 @@ workspace "OpenGl Project"
 			syslibdirs {
 			".\\DevLib\\SDL\\lib\\",
 			".\\DevLib\\SDL\\dlls\\",
+			
 			}
 		filter {}
 
@@ -79,6 +80,7 @@ workspace "OpenGl Project"
 		includedirs {
 			".\\DevLib\\SDL\\include\\",
 			".\\OpenGL Project\\",
+			".\\DevLib\\SDL\\glm\\glm\\",
 		}
 
 	-- sets where it gets source files.
@@ -91,9 +93,10 @@ workspace "OpenGl Project"
 
 	-- makes virtual paths, these are all from the source file folder, and you can set extensions for it.
 		vpaths {
-   			["Headers"] = "**.h",
+   			["Headers"] = {"**.h", "**.hpp"},
    			["Sources"] = {"**.c", "**.cpp"},
-   			["Docs"] = {"**.txt", "**.md", "**.lua", "**.gitignore"}
+   			["Docs"] = {"**.txt", "**.md", "**.lua", "**.gitignore"},
+			["Shaders"] = {"**.frag", "**.vert"}
 		}
 
 	-- postbuildcommand to automatically copy dlls from their folder to the build folder, if you change any of these, make sure to change the filepath here.

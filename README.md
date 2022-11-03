@@ -22,4 +22,4 @@ This is an OpenGL Project we're doing for class.
 
 ## Add Twitter Page here
 
-![Swords](https://cdn.discordapp.com/avatars/354861103920054274/9c8474b81fa3ea10585ee950f812bf43.png?size=2048)
+![Bjorn](https://cdn.discordapp.com/avatars/354861103920054274/9c8474b81fa3ea10585ee950f812bf43.png?size=2048)
