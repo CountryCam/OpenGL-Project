@@ -55,13 +55,11 @@ const glm::ivec2& Input::GetMouseWheel() const
 
 const glm::ivec2& Input::GetMousePosition() const
 {
-	// TODO: insert return statement here
 	return mousePosition;
 }
 
 const glm::ivec2& Input::GetMouseMotion() const
 {
-	// TODO: insert return statement here
 	return mouseMotion;
 }
 

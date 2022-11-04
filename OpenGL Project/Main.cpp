@@ -17,6 +17,7 @@ int main(int argc, char* argv[])
 
 		while (isAppRunning)
 		{
+			Input::Instance()->Update();
 			Screen::Instance()->Clear();
 			Screen::Instance()->SwapBuffer();
 
@@ -32,7 +33,12 @@ int main(int argc, char* argv[])
 			glVertex3f(-0.5f, -0.5f, 0.0f);
 
 			glEnd();
-
+			/////////////////////////////////////////
+			if (Input::Instance()->IsXClicked())
+			{
+				isAppRunning = false;
+			}
+			/////////////////////////////////////////
 		}
 		
 	Screen::Instance()->Shutdown();
