@@ -3,6 +3,8 @@
 #include <SDL.h>
 #include <glm.hpp>
 
+typedef const Uint8* KeyState;
+
 class Input
 {
 public:
@@ -10,8 +12,9 @@ public:
 	
 	bool IsXClicked() const;
 	bool IsKeyPressed() const;
+	bool IsWindowFullScreen() const;
 
-	char GetKey() const;
+	char GetKeyUp() const;
 	char GetKeyDown() const;
 
 
@@ -23,6 +26,7 @@ public:
 	const glm::ivec2& GetMouseMotion() const;
 	const glm::ivec2& GetMousePosition() const;
 
+	KeyState GetKeyStates() const;
 
 	void Update();
 
@@ -33,11 +37,12 @@ private:
 	Input(const Input&);
 	Input& operator = (const Input&);
 
-	bool isxclicked = { false };
-	bool iskeypressed = { false };
+	bool isXClicked = { false };
+	bool isKeyPressed = { false };
+	bool isWindowFullScreen = { false };
 
-	
-	char key = events.key.keysym.sym;
+	char keyUp{ 0 };
+	char keyDown{ 0 };
 	
 	bool isleftbuttonclicked = { false };
 	bool isrightbuttonclicked = { false };
@@ -49,8 +54,6 @@ private:
 	glm::ivec2 mouseMotion{ 0 };
 	glm::ivec2 mousePosition{ 0 };
 
+	KeyState keyStates{ nullptr };
 };
-
-	//Keyboard keyboard
-	//Mouse mouse
 
