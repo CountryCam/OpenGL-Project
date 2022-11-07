@@ -1,8 +1,9 @@
 #pragma once
 #include<iostream>
 #include<Windows.h>
+#include<gl\GL.h>
+#include<glext.h>
 #include<string>
-#include
 
 
 class Utility
