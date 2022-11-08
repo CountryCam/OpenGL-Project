@@ -39,6 +39,7 @@ bool Shader::Create(const std::string& vertexfilename, const std::string& fragme
 	if (ProgramID == 0)
 	{
 		//Utility LOG::
+		return false;
 	}
 
 	if (!CompileShaders(vertexfilename))
@@ -119,7 +120,21 @@ bool Shader::CompileShaders(const std::string& filename)
 	auto shaderID = (filename.find(".vert")) ? vertexShaderID : fragmentShaderID;
 
 	const GLchar* finalCode = reinterpret_cast<const GLchar*>(sourceCode.c_str());
-	return false;
+	glShaderSource(shaderID, 1, &finalCode, nullptr);
+	glCompileShader(shaderID);
+
+	GLint compileResult;
+	glGetShaderiv(shaderID, GL_COMPILE_STATUS, &compileResult);
+
+	if (compileResult == GL_FALSE)
+	{
+		GLchar error[1000];
+		GLsizei bufferSize = 1000;
+		glGetShaderInfoLog(shaderID, bufferSize, &bufferSize, error);
+		//Utility::Log(error, Utility::Severity::Failure);
+		return false;
+	}
+	return true;
 }
 
 
