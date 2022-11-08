@@ -6,15 +6,17 @@
 #include <SDL.h>
 #include "Screen.h"
 #include "Input.h"
+#include "Shader.h"
 
 
 bool isAppRunning { true };
-
+Shader shader;
 
 
 int main(int argc, char* argv[])
 {
 	Screen::Instance()->Initialize(1280, 720, 20, 80, 4.5);
+	Shader::Initialize();
 
 		while (isAppRunning)
 		{
@@ -41,7 +43,7 @@ int main(int argc, char* argv[])
 			}
 			/////////////////////////////////////////
 		}
-		
+	Shader::Shutdown();
 	Screen::Instance()->Shutdown();
 	
 	return 0;

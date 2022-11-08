@@ -28,7 +28,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -116,6 +116,7 @@
   <ItemGroup>
     <ClInclude Include="OpenGL Project\Input.h" />
     <ClInclude Include="OpenGL Project\Screen.h" />
+    <ClInclude Include="OpenGL Project\Shader.h" />
     <ClInclude Include="OpenGL Project\Utility.h" />
     <ClInclude Include="OpenGL Project\glad.h" />
   </ItemGroup>
@@ -123,6 +124,7 @@
     <ClCompile Include="OpenGL Project\Input.cpp" />
     <ClCompile Include="OpenGL Project\Main.cpp" />
     <ClCompile Include="OpenGL Project\Screen.cpp" />
+    <ClCompile Include="OpenGL Project\Shader.cpp" />
     <ClCompile Include="OpenGL Project\Utility.cpp" />
     <ClCompile Include="OpenGL Project\glad.c" />
   </ItemGroup>
