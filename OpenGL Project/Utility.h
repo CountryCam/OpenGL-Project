@@ -1,9 +1,10 @@
 #pragma once
+#include"glad.h"
 #include<iostream>
-#include<Windows.h>
-#include<gl\GL.h>
-#include<glext.h>
 #include<string>
+//#include<Windows.h>
+//#include<gl\GL.h>
+//#include<glext.h>
 
 
 class Utility
@@ -17,6 +18,7 @@ public:
 	};
 
 	static void Initialize();
+	static void VersionDisplay();
 private:
 
 

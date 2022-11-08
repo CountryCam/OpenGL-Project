@@ -1,7 +1,8 @@
-#include <Windows.h>
-#include <gl/GL.h>
+//#include <Windows.h>
+//#include <gl/GL.h>
 
 #include <iostream>
+#include "Utility.h"
 #include <SDL.h>
 #include "Screen.h"
 #include "Input.h"
@@ -21,7 +22,7 @@ int main(int argc, char* argv[])
 			Screen::Instance()->Clear();
 			Screen::Instance()->SwapBuffer();
 
-			glBegin(GL_TRIANGLES); // Need to make seperate folder for making glBegin,Color,Vertex3f & End
+			/*glBegin(GL_TRIANGLES); 
 
 			glColor3f(1.0f, 0.0f, 0.0f);
 			glVertex3f(0.0f, 0.5f, 0.0f);
@@ -32,7 +33,7 @@ int main(int argc, char* argv[])
 			glColor3f(0.0f, 0.0f, 1.0f);
 			glVertex3f(-0.5f, -0.5f, 0.0f);
 
-			glEnd();
+			glEnd();*/
 			/////////////////////////////////////////
 			if (Input::Instance()->IsXClicked())
 			{

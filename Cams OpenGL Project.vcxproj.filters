@@ -42,6 +42,9 @@
     <ClInclude Include="OpenGL Project\Utility.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="OpenGL Project\glad.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL Project\Input.cpp">
@@ -53,6 +56,10 @@
     <ClCompile Include="OpenGL Project\Screen.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="OpenGL Project\glad.c">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL Project\Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore">

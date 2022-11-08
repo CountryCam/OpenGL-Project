@@ -1,6 +1,7 @@
 #pragma once
-#include <Windows.h>
-#include <gl/GL.h>
+#include "glad.h"
+//#include <Windows.h>
+//#include <gl/GL.h>
 
 #include <iostream>
 #include <SDL.h>

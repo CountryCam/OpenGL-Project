@@ -1,6 +1,7 @@
 #ifndef __gl_glext_h_
 #define __gl_glext_h_ 1
 
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -34,7 +35,7 @@ extern "C" {
 
 #define GL_GLEXT_VERSION 20220530
 
-#include <KHR/khrplatform.h>
+#include "khrplatform.h";
 
 /* Generated C header for:
  * API: gl

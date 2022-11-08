@@ -117,11 +117,14 @@
     <ClInclude Include="OpenGL Project\Input.h" />
     <ClInclude Include="OpenGL Project\Screen.h" />
     <ClInclude Include="OpenGL Project\Utility.h" />
+    <ClInclude Include="OpenGL Project\glad.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL Project\Input.cpp" />
     <ClCompile Include="OpenGL Project\Main.cpp" />
     <ClCompile Include="OpenGL Project\Screen.cpp" />
+    <ClCompile Include="OpenGL Project\glad.c" />
+    <ClCompile Include="OpenGL Project\Utility.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
