@@ -1,8 +1,8 @@
 #pragma once
-#include"glad.h"
+#include<glad.h>
+#include<Windows.h>
 #include<iostream>
 #include<string>
-//#include<Windows.h>
 //#include<gl\GL.h>
 //#include<glext.h>
 
@@ -21,5 +21,5 @@ public:
 	static void VersionDisplay();
 private:
 
-
+	static HANDLE consoleHandle;
 };
