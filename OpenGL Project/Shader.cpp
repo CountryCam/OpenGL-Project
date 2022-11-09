@@ -1,16 +1,20 @@
-#include "Shader.h"
 #include "Utility.h"
+#include <assert.h>
+#include <fstream>
+#include "Shader.h"
 
 GLint Shader::vertexShaderID = 0;
 GLint Shader::fragmentShaderID = 0;
 
 bool Shader::Initialize()
 {
+	
 	vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
 
 	if (vertexShaderID == 0)
 	{
 		//Utility Log Failure
+		std::cout << "Failed" << std::endl;
 		return false;
 	}
 
@@ -19,6 +23,7 @@ bool Shader::Initialize()
 	if (fragmentShaderID == 0)
 	{
 		//Utility Log:: Failure
+		std::cout << "Failed" << std::endl;
 		return false;
 	}
 
@@ -39,6 +44,7 @@ bool Shader::Create(const std::string& vertexfilename, const std::string& fragme
 	if (ProgramID == 0)
 	{
 		//Utility LOG::
+		std::cout << "Failed" << std::endl;
 		return false;
 	}
 
@@ -87,6 +93,7 @@ bool Shader::LinkProgram()
 		GLsizei bufferSize = 1000;
 		glGetProgramInfoLog(ProgramID, bufferSize, &bufferSize, error);
 		//Utility::Log(error, Utility::Severity::Failure);
+		std::cout << "Failed" << std::endl;
 		return false;
 	}
 
@@ -102,6 +109,7 @@ bool Shader::CompileShaders(const std::string& filename)
 		//Utility::Log("Error loading shader file \"" + (filename)+"\"."
 			//"Possible causes could be a corrupt or missing file. It could also be "
 			//"that the filename and/or path are incorrectly spelt.", Utility::Severity::Failure);
+		std::cout << "Failed" << std::endl;
 		return false;
 	}
 

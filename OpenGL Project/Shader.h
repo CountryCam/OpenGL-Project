@@ -3,6 +3,7 @@
 #include"Utility.h"
 #include<string>
 
+
 class Shader
 {
 public:
@@ -17,11 +18,12 @@ public:
 	void Destroy() const;
 
 private:
+	bool LinkProgram();
+	bool CompileShaders(const std::string& filename);
+
 	static GLint vertexShaderID;
 	static GLint fragmentShaderID;
 
-	bool LinkProgram();
-	bool CompileShaders(const std::string& filename);
 
 	GLuint ProgramID{ 0 };
 };

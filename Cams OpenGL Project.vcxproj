@@ -130,8 +130,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="OpenGL Project\Debug\Input.obj" />
+    <None Include="OpenGL Project\Debug\Main.obj" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.exe.recipe" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.ilk" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.log" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.command.1.tlog" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.read.1.tlog" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.write.1.tlog" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.command.1.tlog" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.read.1.tlog" />
+    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.write.1.tlog" />
+    <None Include="OpenGL Project\Debug\Screen.obj" />
+    <None Include="OpenGL Project\Debug\vc142.idb" />
+    <None Include="OpenGL Project\Debug\vc142.pdb" />
     <None Include="OpenGL Project\Main.frag" />
     <None Include="OpenGL Project\Main.vert" />
+    <None Include="OpenGL Project\OpenGL Project.vcxproj.user" />
+    <None Include="OpenGL Project\x64\Debug\OpenGL Project.log" />
+    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\CL.command.1.tlog" />
+    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate" />
+    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\unsuccessfulbuild" />
+    <None Include="OpenGL Project\x64\Debug\SDL2.dll" />
+    <None Include="OpenGL Project\x64\Debug\vc142.idb" />
+    <None Include="OpenGL Project\x64\Debug\vc142.pdb" />
     <None Include="README.md" />
     <None Include="premake5.lua" />
   </ItemGroup>
