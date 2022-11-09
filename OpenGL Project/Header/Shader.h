@@ -1,7 +1,6 @@
 #pragma once
 #include <fstream>
 #include"Utility.h"
-#include<string>
 
 
 class Shader
@@ -18,11 +17,12 @@ public:
 	void Destroy() const;
 
 private:
+	static GLint vertexShaderID;
+	static GLint fragmentShaderID;
+
 	bool LinkProgram();
 	bool CompileShaders(const std::string& filename);
 
-	static GLint vertexShaderID;
-	static GLint fragmentShaderID;
 
 
 	GLuint ProgramID{ 0 };

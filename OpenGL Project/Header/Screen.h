@@ -1,5 +1,5 @@
 #pragma once
-#include "glad.h"
+#include "Header/gl.h"
 //#include <Windows.h>
 //#include <gl/GL.h>
 

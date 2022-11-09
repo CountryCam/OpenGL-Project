@@ -1,12 +1,12 @@
 //#include <Windows.h>
 //#include <gl/GL.h>
 
-#include "Utility.h"
+#include "Header/Utility.h"
 #include <iostream>
 #include <SDL.h>
-#include "Screen.h"
-#include "Input.h"
-#include "Shader.h"
+#include "Header/Screen.h"
+#include "Header/Input.h"
+#include "Header/Shader.h"
 
 
 bool isAppRunning { true };
@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 {
 	Screen::Instance()->Initialize(1280, 720, 20, 80, 4.5);
 	Shader::Initialize();
-	shader.Create("Shaders/Main.vert", "Shaders/Main.frag");
+	shader.Create("Main.vert", "Main.frag");
 
 		while (isAppRunning)
 		{

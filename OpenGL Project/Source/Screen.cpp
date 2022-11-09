@@ -1,4 +1,4 @@
-#include "Screen.h"
+#include "Header/Screen.h"
 
 
 Screen* Screen::Instance()
@@ -44,7 +44,13 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 			"The context is either invalid or not supported by your graphics card" << std::endl;
 		return 0;
 	}
-	return false;
+
+	if (!gladLoaderLoadGL())
+	{
+		std::cout << "Failed" << std::endl;
+		return false;
+	}
+	return true;
 }
 
 void Screen::Refresh()

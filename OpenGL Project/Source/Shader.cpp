@@ -1,7 +1,4 @@
-#include "Utility.h"
-#include <assert.h>
-#include <fstream>
-#include "Shader.h"
+#include "Header/Shader.h"
 
 GLint Shader::vertexShaderID = 0;
 GLint Shader::fragmentShaderID = 0;

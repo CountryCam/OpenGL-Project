@@ -114,47 +114,25 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="OpenGL Project\Input.h" />
-    <ClInclude Include="OpenGL Project\Screen.h" />
-    <ClInclude Include="OpenGL Project\Shader.h" />
-    <ClInclude Include="OpenGL Project\Utility.h" />
-    <ClInclude Include="OpenGL Project\glad.h" />
+    <ClInclude Include="OpenGL Project\Header\Input.h" />
+    <ClInclude Include="OpenGL Project\Header\Screen.h" />
+    <ClInclude Include="OpenGL Project\Header\Shader.h" />
+    <ClInclude Include="OpenGL Project\Header\Utility.h" />
+    <ClInclude Include="OpenGL Project\Header\gl.h" />
+    <ClInclude Include="OpenGL Project\Header\khrplatform.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OpenGL Project\Input.cpp" />
-    <ClCompile Include="OpenGL Project\Main.cpp" />
-    <ClCompile Include="OpenGL Project\Screen.cpp" />
-    <ClCompile Include="OpenGL Project\Shader.cpp" />
-    <ClCompile Include="OpenGL Project\Utility.cpp" />
-    <ClCompile Include="OpenGL Project\glad.c" />
+    <ClCompile Include="OpenGL Project\Source\Input.cpp" />
+    <ClCompile Include="OpenGL Project\Source\Main.cpp" />
+    <ClCompile Include="OpenGL Project\Source\Screen.cpp" />
+    <ClCompile Include="OpenGL Project\Source\Shader.cpp" />
+    <ClCompile Include="OpenGL Project\Source\Utility.cpp" />
+    <ClCompile Include="OpenGL Project\Source\gl.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
-    <None Include="OpenGL Project\Debug\Input.obj" />
-    <None Include="OpenGL Project\Debug\Main.obj" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.exe.recipe" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.ilk" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.log" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.command.1.tlog" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.read.1.tlog" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.write.1.tlog" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.command.1.tlog" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.read.1.tlog" />
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.write.1.tlog" />
-    <None Include="OpenGL Project\Debug\Screen.obj" />
-    <None Include="OpenGL Project\Debug\vc142.idb" />
-    <None Include="OpenGL Project\Debug\vc142.pdb" />
-    <None Include="OpenGL Project\Main.frag" />
-    <None Include="OpenGL Project\Main.vert" />
-    <None Include="OpenGL Project\OpenGL Project.vcxproj.user" />
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.log" />
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\CL.command.1.tlog" />
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate" />
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\unsuccessfulbuild" />
-    <None Include="OpenGL Project\x64\Debug\SDL2.dll" />
-    <None Include="OpenGL Project\x64\Debug\vc142.idb" />
-    <None Include="OpenGL Project\x64\Debug\vc142.pdb" />
+    <None Include="OpenGL Project\Shader\Main.frag" />
+    <None Include="OpenGL Project\Shader\Main.vert" />
     <None Include="README.md" />
     <None Include="premake5.lua" />
   </ItemGroup>

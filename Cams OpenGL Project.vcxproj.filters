@@ -7,24 +7,6 @@
     <Filter Include="Headers">
       <UniqueIdentifier>{C196CD9C-2D76-4C38-368E-D70EA2ECB299}</UniqueIdentifier>
     </Filter>
-    <Filter Include="OpenGL Project">
-      <UniqueIdentifier>{A19BF308-8D69-E70E-76FD-5735626AC373}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="OpenGL Project\Debug">
-      <UniqueIdentifier>{D71A0612-C3A9-8FDB-6CC8-A3D65836A081}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="OpenGL Project\Debug\OpenGL Project.tlog">
-      <UniqueIdentifier>{C6087A3F-B285-6D82-DB02-6E96C7DE0916}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="OpenGL Project\x64">
-      <UniqueIdentifier>{924FC64A-7E33-87A0-E793-81F3D3967122}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="OpenGL Project\x64\Debug">
-      <UniqueIdentifier>{883F6659-7464-B5D9-9DAF-9A698933B4F7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="OpenGL Project\x64\Debug\OpenGL Project.tlog">
-      <UniqueIdentifier>{F75F0DD4-E372-0D2D-8C5C-EA19784EAA7A}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Shaders">
       <UniqueIdentifier>{EFAC8DF2-5B8C-0C8E-64A4-9764D00273EF}</UniqueIdentifier>
     </Filter>
@@ -33,39 +15,42 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="OpenGL Project\Input.h">
+    <ClInclude Include="OpenGL Project\Header\Input.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL Project\Screen.h">
+    <ClInclude Include="OpenGL Project\Header\Screen.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL Project\Shader.h">
+    <ClInclude Include="OpenGL Project\Header\Shader.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL Project\Utility.h">
+    <ClInclude Include="OpenGL Project\Header\Utility.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="OpenGL Project\glad.h">
+    <ClInclude Include="OpenGL Project\Header\gl.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL Project\Header\khrplatform.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="OpenGL Project\Input.cpp">
+    <ClCompile Include="OpenGL Project\Source\Input.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL Project\Main.cpp">
+    <ClCompile Include="OpenGL Project\Source\Main.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL Project\Screen.cpp">
+    <ClCompile Include="OpenGL Project\Source\Screen.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL Project\Shader.cpp">
+    <ClCompile Include="OpenGL Project\Source\Shader.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL Project\Utility.cpp">
+    <ClCompile Include="OpenGL Project\Source\Utility.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="OpenGL Project\glad.c">
+    <ClCompile Include="OpenGL Project\Source\gl.c">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -73,80 +58,11 @@
     <None Include=".gitignore">
       <Filter>Docs</Filter>
     </None>
-    <None Include="OpenGL Project\Debug\Input.obj">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\Main.obj">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.exe.recipe">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.ilk">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.log">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.command.1.tlog">
-      <Filter>Sources</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.read.1.tlog">
-      <Filter>OpenGL Project\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\CL.write.1.tlog">
-      <Filter>OpenGL Project\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate">
-      <Filter>OpenGL Project\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.command.1.tlog">
-      <Filter>Sources</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.read.1.tlog">
-      <Filter>OpenGL Project\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\OpenGL Project.tlog\link.write.1.tlog">
-      <Filter>OpenGL Project\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\Screen.obj">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\vc142.idb">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Debug\vc142.pdb">
-      <Filter>OpenGL Project\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\Main.frag">
+    <None Include="OpenGL Project\Shader\Main.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="OpenGL Project\Main.vert">
+    <None Include="OpenGL Project\Shader\Main.vert">
       <Filter>Shaders</Filter>
-    </None>
-    <None Include="OpenGL Project\OpenGL Project.vcxproj.user">
-      <Filter>OpenGL Project</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.log">
-      <Filter>OpenGL Project\x64\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\CL.command.1.tlog">
-      <Filter>Sources</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\OpenGL Project.lastbuildstate">
-      <Filter>OpenGL Project\x64\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\OpenGL Project.tlog\unsuccessfulbuild">
-      <Filter>OpenGL Project\x64\Debug\OpenGL Project.tlog</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\SDL2.dll">
-      <Filter>OpenGL Project\x64\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\vc142.idb">
-      <Filter>OpenGL Project\x64\Debug</Filter>
-    </None>
-    <None Include="OpenGL Project\x64\Debug\vc142.pdb">
-      <Filter>OpenGL Project\x64\Debug</Filter>
     </None>
     <None Include="README.md">
       <Filter>Docs</Filter>
