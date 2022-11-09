@@ -23,7 +23,7 @@ public:
 	static void Initialize();
 	static void VersionDisplay();
 	static void Log(const std::string& outputMsg, Severity severity = Severity::Default);
-
+	static void CheckGLError();
 
 private:
 
