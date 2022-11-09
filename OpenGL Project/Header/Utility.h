@@ -16,7 +16,7 @@ public:
 	{
 		Default = 5,
 		Warning = 14,
-		Falied = 4,
+		Failed = 4,
 		Success = 10 
 	};
 

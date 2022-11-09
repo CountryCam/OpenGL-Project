@@ -10,8 +10,10 @@ bool Shader::Initialize()
 
 	if (vertexShaderID == 0)
 	{
-		//Utility Log Failure
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Error creating the vertex shader object."
+			"Could be due to older version graphics card that does not support modern OpenGL.",
+			Utility::Severity::Failed);
+						
 		return false;
 	}
 
@@ -19,8 +21,9 @@ bool Shader::Initialize()
 
 	if (fragmentShaderID == 0)
 	{
-		//Utility Log:: Failure
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Error creating the fragment shader object."
+			"Could be due to older version graphics card that does not support modern OpenGL.",
+			Utility::Severity::Failed);
 		return false;
 	}
 
@@ -36,12 +39,13 @@ void Shader::Shutdown()
 
 bool Shader::Create(const std::string& vertexfilename, const std::string& fragmentfilename)
 {
+	//If the shader ProgramID is 0! it means the error has accured due to GLAD not being set up the correct way or the Graphics card is very old.
 	ProgramID = glCreateProgram();
 
 	if (ProgramID == 0)
 	{
-		//Utility LOG::
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Error creating shader program. Possible causes could be a "
+				"old graphics card",Utility::Severity::Failed);
 		return false;
 	}
 
@@ -99,14 +103,14 @@ bool Shader::LinkProgram()
 
 bool Shader::CompileShaders(const std::string& filename)
 {
-	std::fstream file(filename, std::ios_base::in);
+	std::ifstream file(filename, std::ios_base::in);
 
 	if (!file.is_open())
 	{
-		//Utility::Log("Error loading shader file \"" + (filename)+"\"."
-			//"Possible causes could be a corrupt or missing file. It could also be "
-			//"that the filename and/or path are incorrectly spelt.", Utility::Severity::Failure);
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Error loading shader file \"" + (filename)+"\"."
+			"Possible causes could be a corrupt or missing file. It could also be "
+			"that the filename and/or path are incorrectly spelt.", Utility::Severity::Failed);
+		
 		return false;
 	}
 
@@ -136,7 +140,7 @@ bool Shader::CompileShaders(const std::string& filename)
 		GLchar error[1000];
 		GLsizei bufferSize = 1000;
 		glGetShaderInfoLog(shaderID, bufferSize, &bufferSize, error);
-		//Utility::Log(error, Utility::Severity::Failure);
+		Utility::Log(error, Utility::Severity::Failed);
 		return false;
 	}
 	return true;
