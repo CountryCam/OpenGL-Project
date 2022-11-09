@@ -4,54 +4,57 @@
     <Filter Include="Docs">
       <UniqueIdentifier>{AE3E847C-9A75-850D-4362-6B102F78010F}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers">
-      <UniqueIdentifier>{C196CD9C-2D76-4C38-368E-D70EA2ECB299}</UniqueIdentifier>
+    <Filter Include="OpenGL Project">
+      <UniqueIdentifier>{A19BF308-8D69-E70E-76FD-5735626AC373}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Shaders">
-      <UniqueIdentifier>{EFAC8DF2-5B8C-0C8E-64A4-9764D00273EF}</UniqueIdentifier>
+    <Filter Include="OpenGL Project\Header">
+      <UniqueIdentifier>{B9431D5C-25B0-D856-EEA3-70B45ACFFABE}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Sources">
-      <UniqueIdentifier>{89565304-F535-D29F-FE4D-5D766AAC3801}</UniqueIdentifier>
+    <Filter Include="OpenGL Project\Shader">
+      <UniqueIdentifier>{274CFC75-93B8-B770-5CAC-4FCEC8D7D9D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL Project\Source">
+      <UniqueIdentifier>{812A8676-ED96-4171-B68A-D9CE22B663D9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGL Project\Header\Input.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL Project\Header\Screen.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL Project\Header\Shader.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL Project\Header\Utility.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL Project\Header\gl.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
     <ClInclude Include="OpenGL Project\Header\khrplatform.h">
-      <Filter>Headers</Filter>
+      <Filter>OpenGL Project\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL Project\Source\Input.cpp">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL Project\Source\Main.cpp">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL Project\Source\Screen.cpp">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL Project\Source\Shader.cpp">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL Project\Source\Utility.cpp">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
     <ClCompile Include="OpenGL Project\Source\gl.c">
-      <Filter>Sources</Filter>
+      <Filter>OpenGL Project\Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,10 +62,10 @@
       <Filter>Docs</Filter>
     </None>
     <None Include="OpenGL Project\Shader\Main.frag">
-      <Filter>Shaders</Filter>
+      <Filter>OpenGL Project\Shader</Filter>
     </None>
     <None Include="OpenGL Project\Shader\Main.vert">
-      <Filter>Shaders</Filter>
+      <Filter>OpenGL Project\Shader</Filter>
     </None>
     <None Include="README.md">
       <Filter>Docs</Filter>
