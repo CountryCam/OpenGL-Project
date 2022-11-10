@@ -18,6 +18,14 @@ void Utility::Log(const std::string& outputMsg, Severity severity)
 
 }
 
+void Utility::VersionDisplay()
+{
+	std::cout << glGetString(GL_VENDOR) << std::endl;
+	std::cout << glGetString(GL_RENDERER) << std::endl;
+	std::cout << glGetString(GL_VERSION) << std::endl;
+	std::cout << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
+}
+
 void Utility::CheckGLError()
 {
 	GLenum errorValue = glGetError();
@@ -63,11 +71,4 @@ void Utility::CheckGLError()
 	}
 }
 
-void Utility::VersionDisplay()
-{
-	std::cout << glGetString(GL_VENDOR) << std::endl;
-	std::cout << glGetString(GL_RENDERER) << std::endl;
-	std::cout << glGetString(GL_VERSION) << std::endl;
-	std::cout << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
-}
 

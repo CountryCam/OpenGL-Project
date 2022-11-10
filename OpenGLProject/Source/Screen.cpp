@@ -11,11 +11,10 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 {
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) == -1)
 	{
-		std::cout << "SDL did not initialize properly." << std::endl;
+		Utility::Log("SDL did not initialize properly.",Utility::Severity::Failed);
 		return 0;
 	}
 	
-	window = SDL_CreateWindow("OpenGL", positionx, positiony, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
 	
 	
 	int contextInt = contextInit * 10;
@@ -26,36 +25,47 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 	
 
 	//set OpenGL context and profile using values asssigned earlier
-	SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
+	//SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_COMPATIBILITY);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, majorNumber);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, minorNumber);
 
+	window = SDL_CreateWindow("OpenGL", positionx, positiony, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
 
 	if (!window)
 	{
-		std::cout << "SDL window could not be created." << std::endl;
+		Utility::Log("SDL window could not be created.",Utility::Severity::Failed);
+		return false;
 	}
 
 	context = SDL_GL_CreateContext(window);
+	
 
 	if (!context)
 	{
-		std::cout << "OpenGL context could not be created. "
-			"The context is either invalid or not supported by your graphics card" << std::endl;
-		return 0;
+		while (!context)
+		{
+			Utility::Log("OpenGL context could not be created.", Utility::Severity::Warning);
+			Utility::Log("The context is either invalid or not supported by your graphics card", Utility::Severity::Warning);
+		}
+		
+		Utility::VersionDisplay();
+		Utility::Log("Failed to load ");
+
+		return false;
 	}
 
 	if (!gladLoaderLoadGL())
 	{
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Failed glad LoaderGL", Utility::Severity::Failed);
 		return false;
 	}
+	Utility::Log("Screen Successfully run! Displaying Information below:", Utility::Severity::Success);
 	return true;
 }
 
 void Screen::Refresh()
 {
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT); //Clearing the Buffer
 }
 void Screen::SwapBuffer()
 {
@@ -69,7 +79,7 @@ void Screen::Clear()
 
 void Screen::Shutdown()
 {
-	SDL_GL_DeleteContext;
-	SDL_DestroyWindow;
+	SDL_GL_DeleteContext(context);
+	SDL_DestroyWindow(window);
 	SDL_Quit;
 }

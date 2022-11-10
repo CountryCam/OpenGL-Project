@@ -17,7 +17,8 @@ int main(int argc, char* argv[])
 {
 	Screen::Instance()->Initialize(1280, 720, 20, 80, 4.5);
 	Shader::Initialize();
-	shader.Create("Main.vert", "Main.frag");
+	Utility::Initialize();
+	shader.Create("OpenGL/Shader/Main.vert", "/Shader/Main.frag");
 
 		while (isAppRunning)
 		{
