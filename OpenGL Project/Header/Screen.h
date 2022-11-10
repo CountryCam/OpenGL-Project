@@ -1,9 +1,10 @@
 #pragma once
-
-#include"Header/Utility.h"
 #include "Header/gl.h"
-#include <SDL.h>
+//#include <Windows.h>
+//#include <gl/GL.h>
+
 #include <iostream>
+#include <SDL.h>
 
 class Screen
 {
