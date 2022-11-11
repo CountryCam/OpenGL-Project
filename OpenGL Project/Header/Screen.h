@@ -2,7 +2,7 @@
 #include "Header/gl.h"
 //#include <Windows.h>
 //#include <gl/GL.h>
-
+#include"Utility.h"
 #include <iostream>
 #include <SDL.h>
 

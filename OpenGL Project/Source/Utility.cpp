@@ -10,7 +10,7 @@ void Utility::Initialize()
 void Utility::Log(const std::string& outputMsg, Severity severity)
 {
 	//Did consoleHandle get called check?
-	assert(consoleHandle);
+	assert(consoleHandle); //Check file path on shader.Create as this can cause issues.
 
 	SetConsoleTextAttribute(consoleHandle, static_cast<WORD>(severity)); 
 	std::cout << outputMsg << std::endl;

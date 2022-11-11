@@ -11,7 +11,7 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 {
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) == -1)
 	{
-		std::cout << "SDL did not initialize properly." << std::endl;
+		Utility::Log("SDL did not initialize properly.", Utility::Severity::Failed);
 		return 0;
 	}
 	
@@ -21,8 +21,8 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 	int contextInt = contextInit * 10;
 	int majorNumber = contextInt / 10;
 	int minorNumber = contextInt % 10 ;
-	std::cout << "Major Version " << majorNumber << std::endl;
-	std::cout << "Minor Version " << minorNumber << std::endl;
+	//std::cout << "Major Version " << majorNumber << std::endl;
+	//std::cout << "Minor Version " << minorNumber << std::endl;
 	
 
 	//set OpenGL context and profile using values asssigned earlier
@@ -33,23 +33,27 @@ bool Screen::Initialize(int width, int height, int positionx, int positiony, flo
 
 	if (!window)
 	{
-		std::cout << "SDL window could not be created." << std::endl;
+		Utility::Log("OpenGL Window was not created properly.", Utility::Severity::Failed);
+		return false;
 	}
 
 	context = SDL_GL_CreateContext(window);
 
 	if (!context)
 	{
-		std::cout << "OpenGL context could not be created. "
-			"The context is either invalid or not supported by your graphics card" << std::endl;
-		return 0;
+		Utility::Log("OpenGL context could not be created.", Utility::Severity::Failed);
+		Utility::Log("The context is either invalid or not supported by your graphics card", Utility::Severity::Failed);
+		
 	}
 
 	if (!gladLoaderLoadGL())
 	{
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Failed gladLoaderLoadGL", Utility::Severity::Failed);
 		return false;
 	}
+
+	Utility::Log("Context has loaded succesfully!", Utility::Severity::Success);
+	Utility::VersionDisplay();
 	return true;
 }
 
@@ -64,7 +68,7 @@ void Screen::SwapBuffer()
 
 void Screen::Clear()
 {
-	system("cls");
+	//ystem("cls");
 }
 
 void Screen::Shutdown()
