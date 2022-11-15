@@ -17,7 +17,7 @@ public:
 	bool Initialize(int width, int height, int positionx, int positiony, float contextInit ); 
 	void Refresh();
 	void SwapBuffer();
-	void Clear();
+	void ClearColor();
 	void Shutdown();
 
 	//SetClearColor(color);

@@ -66,9 +66,9 @@ void Screen::SwapBuffer()
 	SDL_GL_SwapWindow(window);
 }
 
-void Screen::Clear()
+void Screen::ClearColor()
 {
-	//ystem("cls");
+	glClearColor(1.0f, 0.5f, 0.1f, 1.0f); //Change the background Color here (ORANGE)
 }
 
 void Screen::Shutdown()

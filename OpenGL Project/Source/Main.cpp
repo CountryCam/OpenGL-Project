@@ -20,10 +20,12 @@ int main(int argc, char* argv[])
 	Shader::Initialize();
 	shader.Create("./OpenGL Project/Shader/Main.vert", "./OpenGL Project/Shader/Main.frag");
 
+	
 		while (isAppRunning)
 		{
 			Input::Instance()->Update();
-			Screen::Instance()->Clear();
+			Screen::Instance()->ClearColor();
+			Screen::Instance()->Refresh();
 			Screen::Instance()->SwapBuffer();
 
 			/*glBegin(GL_TRIANGLES); 
