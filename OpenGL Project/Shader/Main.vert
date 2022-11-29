@@ -1,10 +1,12 @@
-#version 460
+#version 450
 
-layout (location = 0) in vec3 aPos;
+in vec3 vertexIn;
+in vec3 colorIn;
+out vec3 colorOut;
 
 void main(void)
 {
-	gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+    colorOut = colorIn;
+    gl_Position = vec4(vertexIn, 1.0);
+
 }
-unsigned int vertexShader;
-vertexShader = glCreateShader(GL_VERTEX_SHADER);

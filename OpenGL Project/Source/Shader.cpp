@@ -5,7 +5,6 @@ GLint Shader::fragmentShaderID = 0;
 
 bool Shader::Initialize()
 {
-	
 	vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
 
 	if (vertexShaderID == 0)
@@ -26,7 +25,8 @@ bool Shader::Initialize()
 			Utility::Severity::Failed);
 		return false;
 	}
-
+	Utility::Log("Vertex Shader Initialized...", Utility::Severity::Success);
+	Utility::Log("Fragment Shader Initialized...", Utility::Severity::Success);
 	return true;
 }
 
@@ -64,6 +64,7 @@ bool Shader::Create(const std::string& vertexfilename, const std::string& fragme
 		return false;
 	}
 
+	Utility::Log("Shader Created no errors via (VertexFilename, FragmentFilename, LinkProgram)", Utility::Severity::Success);
 	return true;
 }
 
@@ -93,11 +94,12 @@ bool Shader::LinkProgram()
 		GLchar error[1000];
 		GLsizei bufferSize = 1000;
 		glGetProgramInfoLog(ProgramID, bufferSize, &bufferSize, error);
-		//Utility::Log(error, Utility::Severity::Failure);
-		std::cout << "Failed" << std::endl;
+		Utility::Log("Error Linking", Utility::Severity::Failed);
+		
 		return false;
 	}
 
+	Utility::Log("LinkProgram Running..", Utility::Severity::Success);
 	return true;
 }
 
